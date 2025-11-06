@@ -1,0 +1,19 @@
+mport statistics
+user_input=int(input("Enter a number:"))
+string=user_input.split()
+numbers=[]
+for i in string:
+    numbers.append(float(i))
+
+print("Numbers you entered: ",numbers)
+mean=statistics.mean(numbers)
+median=statistics.median(numbers)
+
+try:
+    mode=statistics.mode(numbers)
+except statistics.StatisticsError:
+    mode="No unique numbers"
+print("The mean of numbers: ",mean)
+print("The median of numbers: ",median)
+print("The mode of numbers: ",mode)
+
