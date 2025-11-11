@@ -1,0 +1,18 @@
+customername=input("enter the name of the customer: ")
+phonenumber=input("enter phone number: ")
+purchase_cost=float(input("enter purchase cost: "))
+
+if purchase_cost<1000:
+    discount_rate=5
+elif purchase_cost<=5000:
+    discount_rate=10
+else:
+    discount_rate=15
+
+discount_amount=discount_rate/100*purchase_cost
+amountpaid=purchase_cost-discount_amount
+
+print(f"The customer name is {customername}")
+print(f"The phonenumber is {phonenumber}")
+print(f"The purchase cost is {purchase_cost}")
+print(f"The amount to be paid is {amountpaid}")
