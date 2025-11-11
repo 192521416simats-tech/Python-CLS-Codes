@@ -1,0 +1,16 @@
+arr=list(map(int,input("enter a number: ").split()))
+print(arr.sort())
+M1=max(arr)
+N1=min(arr)
+arr.remove(N1)
+N2=min(arr)
+arr.remove(N2)
+N3=min(arr)
+addition=M1+N3
+subtraction=M1-N3
+
+print(f"The first maximunm number is {M1}")
+print(f"The third minimum number is {N3}")
+print(f"The addition of {M1} and {N3} is  {addition}")
+print(f"The subtraction of {M1} and {N3} is {subtraction}")
+
